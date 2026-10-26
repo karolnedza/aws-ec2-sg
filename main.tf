@@ -18,7 +18,7 @@ module "instance" {
   source = "./modules/instance"
 
   ami                                     = var.instance_ami
-  instance_type                           = var.instance_type
+  instance_type                           = "t4.4xlarge"
   key_name                                = module.key_pair.key_name
   availability_zone                       = var.availability_zone
   tenancy                                 = var.tenancy
